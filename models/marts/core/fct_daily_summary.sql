@@ -2,7 +2,7 @@ with customer_id_order_date as (
     select
         customer_id,
         order_date,
-        count(*)
+        count(*) as total_orders
     from {{ ref('stg_orders') }}
     group by 1,2
 )
