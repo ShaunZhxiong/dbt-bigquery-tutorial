@@ -1,4 +1,5 @@
 {#
+
 {{
     union_tables_by_prefix(
         database = 'dbt',
@@ -6,4 +7,5 @@
         prefix = 'orders__'
     )
 }}
+
 #}

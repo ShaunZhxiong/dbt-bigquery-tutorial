@@ -1,0 +1,7 @@
+version: 2
+sources:
+    - name: snowplow
+      database: dbt-tutorial
+      loaded_at_field: collector_tstamp
+      tables:
+        - name: events
